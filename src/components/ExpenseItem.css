@@ -1,0 +1,78 @@
+.expense-item {
+    display: flex;
+    background-color: #4b4b4b;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    border-radius: 12px;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.expense-item__description {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    flex: 1;
+}
+
+.expense-item__description h2 {
+    color: #FFFFFF;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.expense-item__price {
+    color:#FFFFFF;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 1px solid white;
+    width: 7rem;
+    border-radius: 12px;
+    background-color: #390054;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.delete-button {
+    margin: auto;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #FA766B;
+    background-color: #FA766B;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-left: 1rem;
+}
+.delete-button:hover {
+    background-color: #F44335;
+}
+
+@media (min-width: 580px) {
+    .expense-item__description {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+    .expense-item__description h2 {
+        font-size: 1.25rem;
+    }
+    .expense-item__price {
+      width: 7rem;
+      font-size: 1.25rem;
+      text-align: center;
+    }
+}
+
+    
+
+    
+
+
+

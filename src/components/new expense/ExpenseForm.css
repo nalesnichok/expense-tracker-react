@@ -1,0 +1,40 @@
+.new-expense__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.new-expense__controls input{
+    width: 20rem;
+    max-width: 100%;
+    border-radius: 6px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+
+}
+.new-expense__controls label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.new-expense__actions {
+    text-align: right;
+  }
+.new-expense__actions button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: #390054;
+    color: white;
+    margin-right: 1rem;
+}
+.new-expense__actions button:hover,
+.new-expense__actions button:active {
+    background-color: #510674;
+    border-color: #510674;
+}
+.cancel-button {
+    background-color: #9E87EB !important;
+    font-weight: bold;
+    border: 1px solid black !important;
+}
