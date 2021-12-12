@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ExpenseForm from "./ExpenseForm";
 import "./NewExpense.css";
+import Button from "../UI/Button";
 
 const NewExpense = (props) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -20,7 +21,7 @@ const NewExpense = (props) => {
 
   const renderElement = () => {
     if (!isEditing) {
-      return <button onClick={changeEditing}>Add New Expense</button>;
+      return <Button onClick={changeEditing}>Add new Expense</Button>
     } else {
       return (
         <ExpenseForm

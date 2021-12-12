@@ -1,23 +1,16 @@
-.new-expense {
-    background-color: #9E87EC;
-    width: 50rem;
-    max-width: 100%;
-    margin: 2rem auto;
-    border-radius: 12px;
-    padding: 1rem;
-    text-align: center;
-}
-button {
+import styled from "styled-components";
+const Button = styled.button`
+    cursor: pointer;
     padding: 0.75rem 1.5rem;
     border-radius: 12px;
     border: 1px solid #ccc;
     background-color: #390054;
     color: white;
     margin-right: 1rem;
-}
-button:hover {
+
+&:hover 
     background-color: #510674;
     border-color: #510674;
-}
+`;
 
-
+export default Button
